@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <ul class="list-unstyled components">
+            <li>
+                <a routerLink="/employee">Home</a>
+            </li>
+            <li>
+                <a [routerLink]="['/employee/myTasks']">My Tasks</a>
+            </li>
+            <!-- <li>
+                <a href="#">Contact</a>
+            </li> -->
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
